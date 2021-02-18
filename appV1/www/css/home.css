@@ -1,0 +1,108 @@
+.head-title {
+    background-color: #00A19A;
+
+    color: white;
+}
+
+.row {
+    --bs-gutter-x: 0rem !important;
+}
+
+.robots-card {
+    border: 1px solid #949494;
+    border-radius: 5px;
+}
+
+
+
+
+
+.form-rounded {
+    border-radius: 1rem;
+}
+
+.btn-default {
+    color: white;
+    background-color: #00A19A;
+    border-radius: 40px;
+}
+
+.btn-default:hover {
+    background-color: #00A19A;
+    color: white;
+}
+
+.btn-default:focus-within {
+    color: white;
+    background-color: #00A19A;
+
+}
+
+.active-label {
+    color: #00A19A;
+}
+
+input.form-check-input:checked {
+
+    background-color: #00A19A;
+
+}
+
+@media not screen and (max-width: 1000px){
+    .mobile-icon {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .jasmin-robot {
+        width: 40%;
+    }
+
+    .text20 {
+        font-size: 20px;
+    }
+
+    input.form-check-input:checked {
+        width: 20px !important;
+        height: 20px !important;
+        background-color: #00A19A;
+
+    }
+
+    button {
+        font-size: 20px !important;
+        height: 50px !important;
+
+    }
+    
+
+}
+
+.btn-save {
+    color: white;
+    background-color: #00A19A;
+    border-radius: 4px !important;
+
+}
+
+
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.5
+} */
+
+/* input[type="date"]::-webkit-c {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+} */

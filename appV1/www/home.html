@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Configure a meeting
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group input-group-md mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-md">Date</span>
+            <input type="date" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-md" />
+            <span class="input-group-text mobile-icon"><i class="bi bi-calendar-date-fill"></i></span>
+          </div>
+          <div class="input-group input-group-md mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-md">From</span>
+            <input type="time" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-md" />
+            <span class="input-group-text mobile-icon"><i class="bi bi-clock"></i></span>
+          </div>
+          <div class="input-group input-group-md mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-md">To</span>
+            <input type="time" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-md" />
+            <span class="input-group-text mobile-icon"><i class="bi bi-clock"></i></span>
+          </div>
+          <div class="input-group input-group-md mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-md">Password</span>
+            <input type="password" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-md" />
+            <span class="input-group-text mobile-icon"><i class="bi bi-lock-fill"></i></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button onclick="btnSaveChanges()" type="button" class="btn btn-default btn-save">
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Bar  -->
+  <div class="row">
+    <div class="head-title">
+      <div class="text-center">
+        <h1>Home</h1>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <div class="text-center">
+    <img src="./img/JasminRobot.jpg" class="jasmin-robot" width="10%" alt="" />
+  </div>
+  <br /><br />
+  <div class="row">
+    <div class="col-xs-0 col-lg-5"></div>
+    <div class="col-xs-12 col-lg-2">
+      <div class="row robots-card">
+        <div class="col">
+          <br />
+          <div class="text-center text20">
+            <b>Nom</b> <br /><br />Zoom Meeting <br /><br /><br />
+            <div class="active-label">
+              <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn form-rounded btn-default"
+                type="button">
+                meeting
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <br />
+          <div class="text-center text20">
+            Robot1 <br /><br /><input class="form-check-input" type="checkbox" value="" id="checkZoomMeeting" />
+            <br />
+            <br /><br />
+            <button onclick="btnCall()" class="btn form-rounded btn-default" type="button">
+              Appel
+            </button>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-0 col-lg-5"></div>
+  </div>
+  <!-- Importations -->
+  <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="cordova.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
