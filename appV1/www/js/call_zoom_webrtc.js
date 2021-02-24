@@ -39,8 +39,6 @@ var joystick;
 
 //create the Nipple
 createNipple();
-
-
 //get values from joystick events
 function bindNipple() {
   joystick
@@ -51,8 +49,6 @@ function bindNipple() {
       debug(evt, data);
     });
 }
-
-
 //creates the nipple
 function createNipple() {
   if (joystick) {
